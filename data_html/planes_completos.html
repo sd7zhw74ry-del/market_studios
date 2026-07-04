@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Market Studio | Planes completos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../data_css/planes_completos.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="../data_html/index.html">Market</a>
+    <nav class="nav-links" aria-label="Navegacion principal">
+      <a href="../data_html/index.html#servicios">SERVICIOS</a>
+      <a href="#planes">PLANES</a>
+      <a href="../data_html/contacto.html">CONTACTO</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="plans-hero">
+      <p class="section-kicker">PAQUETES WEB</p>
+      <h1>Elige un plan y mira como mejora tu pagina</h1>
+      <p>
+        Selecciona cualquier paquete. La tarjeta de detalle cambia sola y el
+        comparador te muestra una idea visual del avance entre un plan anterior
+        y el plan seleccionado.
+      </p>
+    </section>
+
+    <section class="plans-section" id="planes">
+      <div class="plans-grid" id="plansGrid" aria-label="Lista de planes"></div>
+
+      <article class="checkout-panel" aria-live="polite">
+        <div class="compare-card" style="--position: 50%;">
+          <div class="compare-top">
+            <span id="beforeLabel">Antes</span>
+            <span id="afterLabel">Despues</span>
+          </div>
+
+          <div class="compare-slider" id="compareSlider">
+            <div class="compare-mock compare-before" id="beforeMock"></div>
+            <div class="compare-after-wrap" id="afterWrap">
+              <div class="compare-mock compare-after" id="afterMock"></div>
+            </div>
+            <div class="compare-line"></div>
+            <input id="compareRange" type="range" min="0" max="100" value="50" aria-label="Comparar plan anterior y plan seleccionado">
+          </div>
+
+          <p class="compare-hint">Desliza la barra para comparar la mejora.</p>
+        </div>
+
+        <div class="detail-content">
+          <p class="detail-price" id="detailPrice">$599 MXN</p>
+          <h2 id="detailTitle">Plan Relax</h2>
+          <h3 id="detailSubtitle">Una pagina sencilla para empezar</h3>
+          <p class="detail-text" id="detailText"></p>
+          <ul class="detail-list" id="detailList"></ul>
+
+          <div class="detail-actions">
+            <a class="detail-button whatsapp" id="whatsappLink" href="#" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="detail-button instagram" href="https://www.instagram.com/market.dv/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Market Studio</p>
+    <span>Paginas web para marcas, servicios y negocios.</span>
+  </footer>
+
+  <script src="../data_js/planes_completos.js"></script>
+</body>
+</html>
