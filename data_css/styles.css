@@ -463,7 +463,7 @@ h1 {
   background: currentColor;
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 3s ease;
+  transition: transform 2s ease;
 }
 
 .worked-link:hover::after {
